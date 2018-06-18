@@ -5,11 +5,8 @@ Login screen
 */
 
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, Image, SafeAreaView, TouchableWithoutFeedback, StatusBar, TextInput, KeyboardAvoidingView, Keyboard, TouchableOpacity, } from 'react-native'
-
-
-
-
+import { StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, StatusBar, TextInput, KeyboardAvoidingView, Keyboard, TouchableOpacity } from 'react-native'
+import Hr from './hr.dist'
 
  export default class Login extends Component {
       render(){
@@ -19,9 +16,7 @@ import { StyleSheet, Text, View, Image, SafeAreaView, TouchableWithoutFeedback, 
                 <KeyboardAvoidingView behaviour='padding' style={styles.container}>
                  <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}> 
                   <View style={styles.logoContainer}>
-                    <View style={styles.logoContainer}>
                       <Text style={styles.title}>Dharamshala Foods </Text>
-                    </View>
                       <View style={styles.infoContainer}>
                         <TextInput style={styles.input} 
                           underlineColorAndroid='transparent'
@@ -42,7 +37,9 @@ import { StyleSheet, Text, View, Image, SafeAreaView, TouchableWithoutFeedback, 
                           <TouchableOpacity style={styles.buttonContainer}>
                               <Text style={styles.buttonText}>Sign in</Text>
                           </TouchableOpacity>
-                      </View>
+                         {/**/} <Hr /> {/* */}
+                         <Text style={styles.registerContainer}> ----------------- OR --------------------</Text>
+                      </View> 
                    </View>
                   </TouchableWithoutFeedback>
                 </KeyboardAvoidingView> 
@@ -58,7 +55,7 @@ import { StyleSheet, Text, View, Image, SafeAreaView, TouchableWithoutFeedback, 
         },
         logoContainer: {
           alignItems: 'center',
-          paddingVertical: 20,
+          paddingVertical: 25,
           flex: 1,
         },
         logo: {
@@ -66,10 +63,10 @@ import { StyleSheet, Text, View, Image, SafeAreaView, TouchableWithoutFeedback, 
           height: 56,
         },
         title: {
-          fontSize: 25,
+          fontSize: 30,
           fontWeight: 'bold', 
-          marginTop: 5,
-          color : 'darkgoldenrod',
+          marginTop: 85,
+          color : '#ffc857',
           opacity: 0.9,
           textAlign: 'center',
         },
@@ -78,7 +75,7 @@ import { StyleSheet, Text, View, Image, SafeAreaView, TouchableWithoutFeedback, 
           left: 0,
           right: 0,
           bottom: 0,
-          height: 550,
+          height: 475,
          // backgroundColor: 'rgb(255,200,87)',
           padding: 20,
         },
@@ -86,17 +83,23 @@ import { StyleSheet, Text, View, Image, SafeAreaView, TouchableWithoutFeedback, 
           height: 40,
           backgroundColor: 'rgba(225,225,225,0.2)',
           color: '#FFF',
-          marginBottom:20,
-          paddingHorizontal:10
+          marginBottom: 20,
+          paddingHorizontal: 10
         },
         buttonContainer: {
-          backgroundColor: '#f7c744',
+          backgroundColor: '#ffc857',
           paddingVertical: 15
         },
         buttonText: {
           textAlign: 'center',
           color : 'rgb(65,34,52)',
           fontWeight: 'bold',
-          fontSize: 18,
+          fontSize: 15,
+        },
+        registerContainer: {
+         paddingVertical: 20,
+         textAlign: 'center',
+        //  height :500
+
         }
   })

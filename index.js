@@ -18,7 +18,7 @@ class Main extends Component{
         setTimeout(()=>{
             console.log('Done some tasks for about 3 seconds')
             this.setState({ currentScreen: 'Login'})
-        },3000)
+        },1500)
     }
     render(){
         const { currentScreen } = this.state

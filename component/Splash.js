@@ -7,7 +7,8 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   View,
-  Text
+  ActivityIndicator,
+  Image
 } from 'react-native'
 export default class Splash extends Component {
 
@@ -21,8 +22,9 @@ export default class Splash extends Component {
 
     render(){
         return(
-            <View style={styles.container}>
-               <Text style={styles.title}>{`Loading in: ${this.state.timer} `}</Text>
+            <View style={[styles.container, styles.horizontal]}>
+               <Image style={styles.logoContainer} source={require('../assets/img_splash.png')} ></Image>
+               <ActivityIndicator size="large" color="#ffffff"/>
             </View>
 
         )
@@ -36,9 +38,18 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       backgroundColor: 'rgb(46,64,82)',
     },
-    title: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        color : '#ffc857',
+   // title: {
+     //   fontSize: 20,
+     //   fontWeight: 'bold',
+     //   color : '#ffc857',
+   // },
+    logoContainer: {
+        width: 250,
+        height: 250,
+    },
+    horizontal: {
+        flexDirection: 'column',
+        justifyContent: 'space-evenly',
+        padding: 10
     }
 })
