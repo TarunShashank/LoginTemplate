@@ -6,7 +6,6 @@ Login screen
 
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, StatusBar, TextInput, KeyboardAvoidingView, Keyboard, TouchableOpacity } from 'react-native'
-import Hr from './hr.dist'
 
  export default class Login extends Component {
       render(){
@@ -37,8 +36,7 @@ import Hr from './hr.dist'
                           <TouchableOpacity style={styles.buttonContainer}>
                               <Text style={styles.buttonText}>Sign in</Text>
                           </TouchableOpacity>
-                         {/**/} <Hr /> {/* */}
-                         <Text style={styles.registerContainer}> ----------------- OR --------------------</Text>
+                         <View style = {styles.lineStyle}></View>
                       </View> 
                    </View>
                   </TouchableWithoutFeedback>
@@ -84,11 +82,13 @@ import Hr from './hr.dist'
           backgroundColor: 'rgba(225,225,225,0.2)',
           color: '#FFF',
           marginBottom: 20,
-          paddingHorizontal: 10
+          paddingHorizontal: 10,
+          borderRadius: 25
         },
         buttonContainer: {
           backgroundColor: '#ffc857',
-          paddingVertical: 15
+          paddingVertical: 15,
+          borderRadius: 25
         },
         buttonText: {
           textAlign: 'center',
@@ -100,6 +100,10 @@ import Hr from './hr.dist'
          paddingVertical: 20,
          textAlign: 'center',
         //  height :500
-
-        }
+        },
+        lineStyle:{
+          borderWidth: 0.5,
+          borderColor:'black',
+          margin:10,
+      }
   })
