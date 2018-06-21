@@ -6,6 +6,7 @@ Login screen
 
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, StatusBar, TextInput, KeyboardAvoidingView, Keyboard, TouchableOpacity } from 'react-native'
+import { SocialIcon } from 'react-native-elements'
 
  export default class Login extends Component {
       render(){
@@ -36,8 +37,28 @@ import { StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, StatusB
                           <TouchableOpacity style={styles.buttonContainer}>
                               <Text style={styles.buttonText}>Sign in</Text>
                           </TouchableOpacity>
-                         <View style = {styles.lineStyle}></View>
+                          <Text style={styles.orContainer}>OR</Text>
+                          <View style={styles.loginIcons}>
+                              <Text style={styles.loginTitle}>Login with</Text>
+                            <View style={styles.buttonWrap}>
+                              <SocialIcon
+                                type='facebook'
+                                onPress={this.loginWithFacebook}
+                              />
+                              <SocialIcon
+                                type='google-plus-official'
+                                onPress={this.loginWithGoogle}
+                              />
+                            </View>
+                         </View>
+                      </View>
+                      <View style={styles.otherLogins}>
+                        <View style = {styles.lineStyle}></View>
                       </View> 
+                      <View style={styles.footer}>
+                        <Text style={styles.signupText}>Dont have an account?</Text>
+                        <Text style={styles.signupButton}>Signup</Text>
+                      </View>
                    </View>
                   </TouchableWithoutFeedback>
                 </KeyboardAvoidingView> 
@@ -90,20 +111,73 @@ import { StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, StatusB
           paddingVertical: 15,
           borderRadius: 25
         },
+        loginbuttonContainer: {
+          backgroundColor: '#ffc857',
+          paddingVertical: 15,
+          borderRadius: 25,
+          padding: 10
+        },
         buttonText: {
           textAlign: 'center',
           color : 'rgb(65,34,52)',
           fontWeight: 'bold',
           fontSize: 15,
         },
-        registerContainer: {
-         paddingVertical: 20,
-         textAlign: 'center',
-        //  height :500
+        otherLogins: {
+         paddingVertical: 615,
+         position: 'absolute'
         },
         lineStyle:{
           borderWidth: 0.5,
-          borderColor:'black',
-          margin:10,
+          borderColor:'white',
+          width: 500,
+      },
+      orContainer: {
+        fontWeight : 'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        padding: 20
+      },
+      loginIcons: {
+        flexDirection: 'row',
+        flex: 1,
+        justifyContent: 'center',
+       // color: 'white',
+      },
+      buttonWrap: {
+        flexDirection :'row',
+      //  paddingHorizontal : 20,
+      },
+      loginTitle :{ 
+        fontSize: 20,
+        color: '#bdd9bf',
+        textAlign:'center',
+        padding: 5,
+        paddingVertical: 20,
+      },
+      footer :
+      {
+        width: '100%', 
+        height: 50, 
+      //  backgroundColor: '#FF9800', 
+        justifyContent: 'center', 
+        alignItems: 'center',
+        position: 'absolute',
+        bottom: 0,
+        flexDirection: 'row'
+      },
+      signupText :
+      {
+        color: '#bdd9bf',
+        fontSize: 18
+      },
+      signupButton :
+      {
+        fontSize: 20,
+        fontWeight:'bold',
+        color: 'white'
       }
+
   })
+
+ 

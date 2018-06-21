@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\redbox_view.xml",

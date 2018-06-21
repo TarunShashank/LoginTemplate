@@ -3357,11 +3357,11 @@
                 "from": {
                     "file": "C:\\Users\\Lenovo\\Desktop\\React projects\\LoginApp\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 1,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 16,
+                        "startOffset": 17,
                         "endColumn": 45,
-                        "endOffset": 57
+                        "endOffset": 58
                     }
                 }
             },

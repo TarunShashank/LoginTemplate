@@ -129,6 +129,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Lenovo\Desktop\React projects\LoginApp\android\app\build\intermediates\exploded-aar\LoginApp\react-native-vector-icons\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="C:\Users\Lenovo\Desktop\React projects\LoginApp\android\app\build\intermediates\pre-dexed\debug\LoginApp-react-native-vector-icons-unspecified_607c859da78f232705d2a856ee8e2b5969759221.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
         jumboMode="false"
         optimize="true"

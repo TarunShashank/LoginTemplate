@@ -23,7 +23,7 @@ export default class Splash extends Component {
     render(){
         return(
             <View style={[styles.container, styles.horizontal]}>
-               <Image style={styles.logoContainer} source={require('../assets/img_splash.png')} ></Image>
+               <Image style={styles.logoContainer} source={require('../assets/img_backless.png')} ></Image>
                <ActivityIndicator size="large" color="#ffffff"/>
             </View>
 
